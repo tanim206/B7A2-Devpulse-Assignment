@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import type { Request, Response, NextFunction } from "express";
-import config from "../config";
-import sendResponse from "../utils/sendResponse";
+import config from "../config/index.js";
+import sendResponse from "../utils/sendResponse.js";
 
 export const auth = (req: Request, res: Response, next: NextFunction) => {
   try {
